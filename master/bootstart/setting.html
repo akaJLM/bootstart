@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--Site title-->
+<title>BootStart</title>
+
+<!--Meta-->
+<meta name="description" content="...">
+<meta name="author" content="...">
+
+<!--Fav icon-->
+<link rel="shortcut icon" href="favicon.png">
+
+<!--Meta-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Bootstrap css-->
+<link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<!--Bootstrap extension - general-->
+<link href="./css/bootstrap.min.ext.css" rel="stylesheet">
+
+<!--Bootstrap extension - FontAwesome with ie7 support-->
+<link href="./css/bootstrap.font-awesome.min.css" rel="stylesheet">
+<!--[if IE 7]>
+<link rel="stylesheet" href="./css/bootstrap.font-awesome-ie7.min.css">
+<![endif]-->
+<!--Bootstrap extension - FontAwesome new color icons-->
+<link href="./css/bootstrap.font-awesome.min.ext.css" rel="stylesheet">
+
+<!--Hack precognized for #issue-->
+<style type="text/css">
+body {
+	padding-top: 48px;
+	padding-bottom: 40px;
+}
+@media (max-width: 979px) {
+body {
+	padding-top: 0;
+}
+}
+</style>
+
+<!--Bootstrap responsive-->
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<!--Bootstrap responsive extension - general-->
+<link href="./css/bootstrap-responsive.min.ext.css" rel="stylesheet">
+
+<!-- Options css -->
+<link href="./css/jquery.fullcalendar.min.css" rel="stylesheet">
+
+<!--Theme css-->
+<link href="./css/theme.style.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<!--Menu top-->
+<div id="navbar-user" class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+        <li><a class="brand" href="./" style="margin-left:0">BootStart</a></li>
+      </ul>
+      <div class="pull-right">
+        <div class="btn-toolbar">
+          <div class="btn-group"> <a href="./setting.html" class="btn btn-mini"> <i class="icon-user icon-white"></i>Profile </a> <a href="./login.html" class="btn btn-mini"><i class="icon-off icon-white"></i>Logout </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Header-->
+<header class="subhead clearfix">
+  <div class="subhead-inner">
+    <div class="container"> 
+      
+      <!--Breadcrumb-->
+      <ul class="btn-align breadcrumb pull-left hidden-phone nav-breadcrumb">
+        <li> <a href="./">Admin</a> <span class="divider">/</span> </li>
+        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sample pages 1</a>
+          <ul class="dropdown-menu">
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./pricing.html">Pricing plans</a></li>
+            <li><a href="./invoice.html">Invoices</a></li>
+          </ul>
+          <span class="divider">/</span> </li>
+        <li class="active">Settings</li>
+      </ul>
+      
+      <!-- Button Toolbar right-->
+      <div class="btn-toolbar pull-right">
+        <div class="btn-group"> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Add post"> <i class="icon-edit"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Add page"> <i class="icon-list-alt"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Add product"> <i class="icon-plus"></i> </a> </div>
+        <div class="btn-group"> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Files"> <i class="icon-file"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Users"> <i class="icon-user"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Comments"> <i class="icon-comment"></i> <span class="label label-info">5</span> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Orders"> <i class="icon-shopping-cart"></i> <span class="label label-success">83</span> </a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--Content-->
+<div class="content clearfix">
+  <div class="container">
+    <div class="row"> 
+      <!--Main content-->
+      <div class="span8 main">
+        <div class="row-fluid">
+          <div class="span12 widget">
+            <div class="widget-title accordion-toggle" data-toggle="collapse" href="#collapse1"><span class="icon"><i class="icon-user icon-grey icon-shadowed"></i></span>
+              <h5>Your account</h5>
+            </div>
+            <button type="button" class="pull-right close" data-dismiss="widget">&times;</button>
+            <div id="collapse1" class="widget-content collapse in no-padding">
+              <div class="tabbable">
+                <ul class="nav nav-tabs">
+                  <li class="active"> <a href="#profile" data-toggle="tab">Profile</a> </li>
+                  <li class=""><a href="#settings" data-toggle="tab">Settings</a></li>
+                </ul>
+                <br>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="profile">
+                    <form id="edit-profile" class="form-horizontal">
+                      <fieldset>
+                        <div class="control-group">
+                          <label class="control-label" for="username">Username</label>
+                          <div class="controls">
+                            <input type="text" class="input-medium disabled" id="username" value="john77xd" disabled="">
+                            <p class="help-block">Your username is for logging in and cannot be changed.</p>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="firstname">First Name</label>
+                          <div class="controls">
+                            <input type="text" class="input-medium" id="firstname" value="John">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="lastname">Last Name</label>
+                          <div class="controls">
+                            <input type="text" class="input-medium" id="lastname" value="Doe">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="email">Email Address</label>
+                          <div class="controls">
+                            <input type="text" class="input-large" id="email" value="john.doe@example.com">
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="control-group">
+                          <label class="control-label" for="password1">Password</label>
+                          <div class="controls">
+                            <input type="password" class="input-medium" id="password1" value="password">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="password2">Confirm</label>
+                          <div class="controls">
+                            <input type="password" class="input-medium" id="password2" value="password">
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-actions">
+                          <button type="submit" class="btn btn-primary">Save</button>
+                          <button class="btn">Cancel</button>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <div class="tab-pane" id="settings">
+                    <form id="edit-profile2" class="form-horizontal">
+                      <fieldset>
+                        <div class="control-group">
+                          <label class="control-label" for="accounttype">Account Type</label>
+                          <div class="controls">
+                            <label class="radio">
+                              <input type="radio" name="accounttype" value="option1" checked="checked" id="accounttype">
+                              POP3 </label>
+                            <label class="radio">
+                              <input type="radio" name="accounttype" value="option2">
+                              IMAP </label>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="accountusername">Account Username</label>
+                          <div class="controls">
+                            <input type="text" class="input-large" id="accountusername" value="john.smith@example.com">
+                            <p class="help-block">Leave blank to use your profile email address.</p>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="emailserver">Email Server</label>
+                          <div class="controls">
+                            <input type="text" class="input-large" id="emailserver" value="mail.example.com">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="accountpassword">Password</label>
+                          <div class="controls">
+                            <input type="text" class="input-large" id="accountpassword" value="password">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="accountadvanced">Advanced Settings</label>
+                          <div class="controls">
+                            <label class="checkbox">
+                              <input type="checkbox" name="accountadvanced" value="option1" checked="checked" id="accountadvanced">
+                              User encrypted connection when accessing this server </label>
+                            <label class="checkbox">
+                              <input type="checkbox" name="accounttype" value="option2">
+                              Download all message on connection </label>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-actions">
+                          <button type="submit" class="btn btn-primary">Save</button>
+                          <button class="btn">Cancel</button>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="span4 sidebar-right pull-right">
+        <div class="row-fluid">
+          <div class="span12 widget">
+            <div class="widget-title accordion-toggle" data-toggle="collapse" href="#collapse2"><span class="icon"><i class="icon-warning-sign icon-grey icon-shadowed"></i></span>
+              <h5>Information</h5>
+            </div>
+            <button type="button" class="pull-right close" data-dismiss="alert">×</button>
+            <div id="collapse2" class="widget-content collapse in">
+              <div class="row-fluid">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span12 widget">
+            <div class="widget-title accordion-toggle" data-toggle="collapse" href="#collapse2"><span class="icon"><i class="icon-plus icon-grey icon-shadowed"></i></span>
+              <h5>More info</h5>
+            </div>
+            <button type="button" class="pull-right close" data-dismiss="alert">×</button>
+            <div id="collapse2" class="widget-content collapse in">
+              <div class="row-fluid">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+<footer class="footer">
+  <p class="text-center">&copy; BootStart</p>
+</footer>
+
+<!--Javascript--> 
+
+<!--libraries--> 
+<script src="./js/jquery.js"></script> 
+<script src="./js/bootstrap.min.js"></script> 
+<script src="./js/bootstrap.min.ext.js"></script> 
+
+<!--Theme--> 
+<script src="./js/theme-mandatory.js"></script>
+</body>
+</html>

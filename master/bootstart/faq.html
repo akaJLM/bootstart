@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--Site title-->
+<title>BootStart</title>
+
+<!--Meta-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Fav icon-->
+<link rel="shortcut icon" href="favicon.png">
+
+<!--Bootstrap css-->
+<link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<!--Bootstrap extension - general-->
+<link href="./css/bootstrap.min.ext.css" rel="stylesheet">
+
+<!--Bootstrap extension - FontAwesome with ie7 support-->
+<link href="./css/bootstrap.font-awesome.min.css" rel="stylesheet">
+
+<!--Bootstrap extension - FontAwesome new color icons-->
+<link href="./css/bootstrap.font-awesome.min.ext.css" rel="stylesheet">
+<!--[if IE 7]>
+<link rel="stylesheet" href="./css/bootstrap.font-awesome-ie7.min.css">
+<![endif]-->
+
+<!--Hack precognized for #issue-->
+<style type="text/css">
+body {
+	padding-top: 48px;
+	padding-bottom: 40px;
+}
+@media (max-width: 979px) {
+body {
+	padding-top: 0;
+}
+}
+</style>
+
+<!--Bootstrap responsive-->
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<!--Theme css-->
+<link href="./css/theme.style.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<!--Menu top-->
+<div id="navbar-user" class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+        <li><a class="brand" href="./" style="margin-left:0">BootStart</a></li>
+      </ul>
+      <div class="pull-right">
+        <div class="btn-toolbar">
+          <div class="btn-group"> <a href="./setting.html" class="btn btn-mini"> <i class="icon-user icon-white"></i>Profile </a> <a href="./login.html" class="btn btn-mini"><i class="icon-off icon-white"></i>Logout </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Header-->
+<header class="subhead clearfix">
+  <div class="subhead-inner">
+    <div class="container"> 
+      
+      <!--Breadcrumb-->
+      <ul class="btn-align breadcrumb pull-left hidden-phone nav-breadcrumb">
+        <li> <a href="./">Admin</a> <span class="divider">/</span> </li>
+        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sample pages 1</a>
+          <ul class="dropdown-menu">
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./invoice.html">Invoice</a></li>
+            <li><a href="./setting.html">Settings</a></li>
+          </ul>
+          <span class="divider">/</span> </li>
+        <li class="active">FAQ</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!--Content-->
+<div class="content clearfix">
+  <div class="container">
+    <div class="row"> 
+      <!--Main content-->
+      <div class="span8 main">
+        <div class="alert alert-info hidden-phone">For each part of my work, modestly, I try to propose to you new ideas. For the FAQ, a intelligent search linked to a highlight system, ideal if you have many questions in your FAQ or for your user, to classified the important questions for him with its personal color themes. Select "Keep Highlight". Search something like "page" and select proposals, after "browser" with green color and select proposals. View the result, Try it<a href="#" class="btn btn-mini btn-info close" data-dismiss="alert"><i class="icon-remove icon-white"></i></a></div>
+        <div class="row-fluid">
+          <div id="pop" class="span12 widget">
+            <div class="widget-title accordion-toggle" data-toggle="collapse" href="#collapse1"><span class="icon"><i class="icon-question-sign icon-grey icon-shadowed"></i></span>
+              <h5>FAQ</h5>
+            </div>
+            <button type="button" class="pull-right close" data-dismiss="widget">&times;</button>
+            <div id="collapse1" class="widget-content collapse in">
+              <div class="row-fluid text-center">
+                <div class="span12">
+                  <div class="input-prepend input-append text-left search hidden-phone"> <span class="add-on">@</span>
+                    <input autocomplete="off" id="faq" type="text" placeholder="Search by Keyword" data-provide="typeahead">
+                    <span class="add-on">
+                    <label class="checkbox">
+                      <input class="text-center" id="highlight" name="highlight" type="checkbox">
+                      Keep highlight&nbsp; </label>
+                    </span> </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordion2">
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">How can I get my own domain name ?</a> </div>
+                  <div id="collapseOne" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">How can I block my hosting service's advertisements ?</a> </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">How do I redirect someone to another page ?</a> </div>
+                  <div id="collapseThree" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">How do I stop my page from being cached ?</a> </div>
+                  <div id="collapseFour" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">How can I disable the browser's right-click options ?</a> </div>
+                  <div id="collapseFive" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">How do I hide my URL ?</a> </div>
+                  <div id="collapseSix" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven">How do I detect what browser is being used ?</a> </div>
+                  <div id="collapseSeven" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseHeight">How do I get my visitor's email addresses ?</a> </div>
+                  <div id="collapseHeight" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseNine">Why is my custom 404 Not Found message not displayed ?</a> </div>
+                  <div id="collapseNine" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+                <div class="accordion-group accordion-faq">
+                  <div class="accordion-heading"> <span class="icon pull-left" style="margin:7px;"><i class="icon-star icon-blue"></i></span> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTen">How do I password protect my web site ?</a> </div>
+                  <div id="collapseTen" class="accordion-body collapse">
+                    <div class="accordion-inner"> In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="span4 sidebar-right pull-right">
+        <div class="row-fluid">
+          <div class="span12 widget">
+            <div class="widget-title accordion-toggle" data-toggle="collapse" href="#collapse2"><span class="icon"><i class=" icon-envelope icon-grey icon-shadowed"></i></span>
+              <h5>Contact support</h5>
+            </div>
+            <button type="button" class="pull-right close" data-dismiss="alert">×</button>
+            <div id="collapse2" class="widget-content collapse in">
+              <div class="row-fluid">
+                <form class="form-actions" style="background: none; border: none">
+                  <fieldset class="text-center">
+                    <input type="text" style="width:95%;" placeholder="Subject" required>
+                    <textarea style="width:95%; height:80px;" placeholder="Your message"  required></textarea>
+                  </fieldset>
+                  <button type="submit" class="btn btn-info">Ask your Question</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span4 pull-right">
+          <div class="row-fluid">
+            <div class="span12 widget">
+              <div class="widget-title accordion-toggle" data-toggle="collapse" href="#collapse2"><span class="icon"><i class=" icon-star-empty icon-grey icon-shadowed"></i></span>
+                <h5>Most Popular Questions</h5>
+              </div>
+              <button type="button" class="pull-right close" data-dismiss="alert">×</button>
+              <div id="collapse2" class="widget-content collapse in">
+                <div class="row-fluid">
+                  <p class="text-error">Donec ullamcorper nulla ?</p>
+                  <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="text-warning">Etiam porta sem malesuada ?</p>
+                  <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="text-success">Duis mollis, est non commodo ?</p>
+                  <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <p class="text-info">Aenean eu leo quam. Pellentesque ?</p>
+                  <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+<footer class="footer">
+  <p class="text-center">&copy; BootStart</p>
+</footer>
+
+<!--Javascript--> 
+
+<!--libraries--> 
+<script src="./js/jquery.js"></script> 
+<script src="./js/bootstrap.min.js"></script> 
+<script src="./js/bootstrap.min.ext.js"></script> 
+
+<!--Theme--> 
+<script src="./js/theme-mandatory.js"></script>
+</body>
+</html>

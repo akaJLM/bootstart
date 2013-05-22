@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--Site title-->
+<title>BootStart</title>
+
+<!--Meta-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Fav icon-->
+<link rel="shortcut icon" href="favicon.png">
+
+<!--Bootstrap css-->
+<link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<!--Bootstrap extension - general-->
+<link href="./css/bootstrap.min.ext.css" rel="stylesheet">
+
+<!--Bootstrap extension - FontAwesome with ie7 support-->
+<link href="./css/bootstrap.font-awesome.min.css" rel="stylesheet">
+
+<!--Bootstrap extension - FontAwesome new color icons-->
+<link href="./css/bootstrap.font-awesome.min.ext.css" rel="stylesheet">
+<!--[if IE 7]>
+<link rel="stylesheet" href="./css/bootstrap.font-awesome-ie7.min.css">
+<![endif]-->
+
+<!--Hack precognized for #issue-->
+<style type="text/css">
+body {
+	padding-top: 48px;
+	padding-bottom: 40px;
+}
+@media (max-width: 979px) {
+body {
+	padding-top: 0;
+}
+}
+</style>
+
+<!--Bootstrap responsive-->
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<!--Theme css-->
+<link href="./css/theme.style.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<!--Menu top-->
+<div id="navbar-user" class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+        <li><a class="brand" href="./" style="margin-left:0">BootStart</a></li>
+      </ul>
+      <div class="pull-right">
+        <div class="btn-toolbar">
+          <div class="btn-group"> <a href="./setting.html" class="btn btn-mini"> <i class="icon-user icon-white"></i>Profile </a> <a href="./login.html" class="btn btn-mini"><i class="icon-off icon-white"></i>Logout </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Header-->
+<header class="subhead clearfix">
+  <div class="subhead-inner">
+    <div class="container"> 
+      
+      <!--Breadcrumb-->
+      <ul class="btn-align breadcrumb pull-left hidden-phone nav-breadcrumb">
+        <li> <a href="./">Admin</a> <span class="divider">/</span> </li>
+        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sample pages 1</a>
+          <ul class="dropdown-menu">
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./pricing.html">Pricing plans</a></li>
+            <li><a href="./setting.html">Settings</a></li>
+          </ul>
+          <span class="divider">/</span> </li>
+        <li class="active">Invoices</li>
+      </ul>
+      
+      <!-- Button Toolbar right-->
+      <div class="btn-toolbar pull-right">
+        <div class="btn-group"> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Add post"> <i class="icon-edit"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Add page"> <i class="icon-list-alt"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Add product"> <i class="icon-plus"></i> </a> </div>
+        <div class="btn-group"> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Files"> <i class="icon-file"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Users"> <i class="icon-user"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Comments"> <i class="icon-comment"></i> <span class="label label-info">5</span> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Orders"> <i class="icon-shopping-cart"></i> <span class="label label-success">83</span> </a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--Content-->
+<div class="content clearfix">
+  <div class="container">
+    <div class="row"> 
+      <!--Main content-->
+      <div class="span8 main">
+        <div class="row-fluid">
+          <div class="span12 widget">
+            <div class="widget-title accordion-toggle" data-toggle="collapse" href="#collapse1"><span class="icon"><i class="icon-file-alt icon-grey icon-shadowed"></i></span>
+              <h5>Invoice Preview</h5>
+            </div>
+            <button type="button" class="pull-right close" data-dismiss="widget">&times;</button>
+            <div id="collapse1" class="widget-content collapse in no-padding">
+              <div class="row-fluid">
+                <div class="span12">
+                  <div>&nbsp;</div>
+                  <div class="span5">Invoice #112345</div>
+                  <div class="span5 pull-right">Date: 2012-07-15</div>
+                  <div class="span10">
+                    <h4>Invoice Title Subject</h4>
+                  </div>
+                  <div class="span5">
+                    <address>
+                    From<br>
+                    &nbsp;<br>
+                    <strong>Twitter, Inc.</strong><br>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                    <address>
+                    <strong>Full Name</strong><br>
+                    <a href="mailto:#">first.last@example.com</a>
+                    </address>
+                  </div>
+                  <br>
+                  <div class="span5 pull-right">
+                    <address>
+                    To<br>
+                    &nbsp;<br>
+                    <strong>Twitter, Inc.</strong><br>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                    </address>
+                    <address>
+                    <strong>Full Name</strong><br>
+                    <a href="mailto:#">first.last@example.com</a>
+                    </address>
+                  </div>
+                </div>
+                <br>
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th> Transaction Id </th>
+                      <th> Title </th>
+                      <th> Amount </th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th class="total-label" colspan="2"> Total: </th>
+                      <th class="total-amount"> $890.00 </th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                      <td> #43 </td>
+                      <td> Vivamus sed auctor nibh congue, ligula </td>
+                      <td> $20.00 </td>
+                    </tr>
+                    <tr>
+                      <td> #44 </td>
+                      <td> Proin porttitor bibendum placerat. </td>
+                      <td> $500.00 </td>
+                    </tr>
+                    <tr>
+                      <td> #45 </td>
+                      <td> Lorem ipsum dolor sit amet, consectetur. </td>
+                      <td> $30.00 </td>
+                    </tr>
+                    <tr>
+                      <td> #47 </td>
+                      <td> Larta mida eno mosque teria. </td>
+                      <td> $340.00 </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="btn-toolbar pull-right" style="margin:0 25px auto">
+                  <div class="btn-group"><a href="#" class="btn btn-mini" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Pay Now"> <i class="icon-shopping-cart icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                  <div class="btn-group"><a href="#" class="btn btn-mini" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Download"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Print"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                </div>
+                <div class="span9 hidden-phone"><span class="alert alert-info">Amount in Word: Five Hundred and Fifty</span></div>
+                <div class="span9 visible-phone">Amount in Word: Five Hundred and Fifty</div>
+                <div class="span9">
+                  <h5>Resume</h5>
+                  <p> Nam pharetra sodales tincidunt. Phasellus posuere faucibus tempus. Ut dapibus ullamcorper nulla, ac pellentesque purus tincidunt nec. Ut non leo nec erat venenatis pharetra. </p>
+                  <p class="alert alert-block"> <strong>Note:</strong> Nam pharetra sodales tincidunt. Phasellus posuere faucibus tempus. Ut dapibus ullamcorper nulla, ac pellentesque purus tincidunt nec.</p>
+                </div>
+              </div>
+              <p>account Bank: 012-36547890-00, Twitter Inc - 795 Folsom Ave, Suite 600 - San Francisco, CA 94107</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="span4 sidebar-right pull-right">
+        <div class="row-fluid">
+          <div class="span12 widget">
+            <div class="widget-title accordion-toggle" data-toggle="collapse" href="#collapse2"><span class="icon"><i class="icon-paper-clip icon-grey icon-shadowed"></i></span>
+              <h5>Pending payment</h5>
+            </div>
+            <button type="button" class="pull-right close" data-dismiss="alert">×</button>
+            <div id="collapse2" class="widget-content collapse in no-padding">
+              <div class="row-fluid">
+                <table class="table" style="margin: 0; color:rgb(85, 84, 84); text-shadow: 0px 1px 1px #fff">
+                  <tbody>
+                    <tr class="info">
+                      <td>5</td>
+                      <td>#112348</td>
+                      <td>Title 5</td>
+                      <td><div class="btn-toolbar pull-right" style="margin:0 auto">
+                          <div class="btn-group"><a href="#" class="btn btn-mini"> <i class="icon-search icon-large icon-blue icon-shadowed-white"></i> </a><a href="#" class="btn btn-mini"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>#112347</td>
+                      <td>Title 6</td>
+                      <td><div class="btn-toolbar pull-right" style="margin:0 auto">
+                          <div class="btn-group"><a href="#" class="btn btn-mini"> <i class="icon-search icon-large icon-blue icon-shadowed-white"></i> </a><a href="#" class="btn btn-mini"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                        </div></td>
+                    </tr>
+                    <tr class="info">
+                      <td>7</td>
+                      <td>#112346</td>
+                      <td>Title 7</td>
+                      <td><div class="btn-toolbar pull-right" style="margin:0 auto">
+                          <div class="btn-group"><a href="#" class="btn btn-mini"> <i class="icon-search icon-large icon-blue icon-shadowed-white"></i> </a><a href="#" class="btn btn-mini"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>#112345</td>
+                      <td>Title 8</td>
+                      <td><div class="btn-toolbar pull-right" style="margin:0 auto">
+                          <div class="btn-group"><a href="#" class="btn btn-mini"> <i class="icon-search icon-large icon-blue icon-shadowed-white"></i> </a><a href="#" class="btn btn-mini"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                        </div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span12 widget">
+            <div class="widget-title accordion-toggle" data-toggle="collapse" href="#collapse2"><span class="icon"><i class="icon-link icon-grey icon-shadowed"></i></span>
+              <h5>Invoice list</h5>
+            </div>
+            <button type="button" class="pull-right close" data-dismiss="alert">×</button>
+            <div id="collapse2" class="widget-content collapse in no-padding">
+              <div class="row-fluid">
+                <table class="table" style="margin: 0; color:rgb(85, 84, 84); text-shadow: 0px 1px 1px #fff">
+                  <tbody>
+                    <tr class="info">
+                      <td>1</td>
+                      <td>#112348</td>
+                      <td>Title 1</td>
+                      <td><div class="btn-toolbar pull-right" style="margin:0 auto">
+                          <div class="btn-group"><a href="#" class="btn btn-mini"> <i class="icon-search icon-large icon-blue icon-shadowed-white"></i> </a><a href="#" class="btn btn-mini"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>#112347</td>
+                      <td>Title 2</td>
+                      <td><div class="btn-toolbar pull-right" style="margin:0 auto">
+                          <div class="btn-group"><a href="#" class="btn btn-mini"> <i class="icon-search icon-large icon-blue icon-shadowed-white"></i> </a><a href="#" class="btn btn-mini"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                        </div></td>
+                    </tr>
+                    <tr class="info">
+                      <td>3</td>
+                      <td>#112346</td>
+                      <td>Title 3</td>
+                      <td><div class="btn-toolbar pull-right" style="margin:0 auto">
+                          <div class="btn-group"><a href="#" class="btn btn-mini"> <i class="icon-search icon-large icon-blue icon-shadowed-white"></i> </a><a href="#" class="btn btn-mini"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>#112345</td>
+                      <td>Title 4</td>
+                      <td><div class="btn-toolbar pull-right" style="margin:0 auto">
+                          <div class="btn-group"><a href="#" class="btn btn-mini"> <i class="icon-search icon-large icon-blue icon-shadowed-white"></i> </a><a href="#" class="btn btn-mini"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                        </div></td>
+                    </tr>
+                    <tr class="info">
+                      <td>5</td>
+                      <td>#112346</td>
+                      <td>Title 5</td>
+                      <td><div class="btn-toolbar pull-right" style="margin:0 auto">
+                          <div class="btn-group"><a href="#" class="btn btn-mini"> <i class="icon-search icon-large icon-blue icon-shadowed-white"></i> </a><a href="#" class="btn btn-mini"> <i class="icon-save icon-large icon-blue icon-shadowed-white"></i> </a> <a href="#" onClick="window.print(); return false;" class="btn btn-mini"> <i class="icon-print icon-large icon-blue icon-shadowed-white"></i> </a> </div>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td colspan="4"><div class="text-center"><a href="#" class="btn btn-mini" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Previous"> <i class="icon-chevron-up icon-white icon-shadowed"></i> </a> <a href="#" class="btn btn-mini" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Next"> <i class="icon-chevron-down icon-white icon-shadowed"></i> </a> </div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+<footer class="footer">
+  <p class="text-center">&copy; BootStart</p>
+</footer>
+
+<!--Javascript--> 
+
+<!--libraries--> 
+<script src="./js/jquery.js"></script> 
+<script src="./js/bootstrap.min.js"></script> 
+<script src="./js/bootstrap.min.ext.js"></script> 
+
+<!--Theme--> 
+<script src="./js/theme-mandatory.js"></script>
+</body>
+</html>

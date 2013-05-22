@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--Site title-->
+<title>BootStart</title>
+
+<!--Meta-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--Fav icon-->
+<link rel="shortcut icon" href="./favicon.png">
+
+<!--Bootstrap css-->
+<link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+<!--Bootstrap extension - general-->
+<link href="./css/bootstrap.min.ext.css" rel="stylesheet">
+
+<!--Bootstrap extension - FontAwesome with ie7 support-->
+<link href="./css/bootstrap.font-awesome.min.css" rel="stylesheet">
+
+<!--Bootstrap extension - FontAwesome new color icons-->
+<link href="./css/bootstrap.font-awesome.min.ext.css" rel="stylesheet">
+<!--[if IE 7]>
+<link rel="stylesheet" href="./css/bootstrap.font-awesome-ie7.min.css">
+<![endif]-->
+
+<!--Hack precognized for #issue-->
+<style type="text/css">
+body {
+	padding-top: 48px;
+	padding-bottom: 40px;
+}
+@media (max-width: 979px) {
+body {
+	padding-top: 0;
+}
+}
+</style>
+
+<!--Bootstrap responsive-->
+<link href="./css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<!--Theme css-->
+<link href="./css/theme.style.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<!--Menu top-->
+<div id="navbar-user" class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <ul class="nav">
+        <li><a class="brand" href="./" style="margin-left:0">BootStart</a></li>
+      </ul>
+      <div class="pull-right">
+        <div class="btn-toolbar">
+          <div class="btn-group"> <a href="./setting.html" class="btn btn-mini"> <i class="icon-user icon-white"></i>Profile </a> <a href="./login.html" class="btn btn-mini"><i class="icon-off icon-white"></i>Logout </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Header-->
+<header class="subhead clearfix">
+  <div class="subhead-inner">
+    <div class="container"> 
+      
+      <!--Breadcrumb-->
+      <ul class="btn-align breadcrumb pull-left hidden-phone nav-breadcrumb">
+        <li> <a href="./">Admin</a> <span class="divider">/</span> </li>
+        <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Components</a>
+          <ul class="dropdown-menu">
+            <li><a href="./icon.html">Icon</a></li>
+            <li><a href="./grid.html">Grid</a></li>
+            <li><a href="./form.html">Form</a></li>
+          </ul>
+          <span class="divider">/</span> </li>
+        <li class="active">Button</li>
+      </ul>
+      
+      <!-- Button Toolbar right-->
+      <div class="btn-toolbar pull-right">
+        <div class="btn-group"> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Add post"> <i class="icon-edit"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Add page"> <i class="icon-list-alt"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Add product"> <i class="icon-plus"></i> </a> </div>
+        <div class="btn-group"> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Files"> <i class="icon-file"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Users"> <i class="icon-user"></i> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Comments"> <i class="icon-comment"></i> <span class="label label-info">5</span> </a> <a href="#" class="btn" rel="tooltip" data-toggle="tooltip" data-placement="top" data-original-title="Manage Orders"> <i class="icon-shopping-cart"></i> <span class="label label-success">83</span> </a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--Content-->
+<div class="content clearfix">
+  <div class="container">
+    <div class="row-fluid"> 
+      <!-- Sidebar-->
+      <div class="span12">
+        <div class="span1 pull-left well well-small sidebar-mini">
+          <ul class="nav nav-tabs nav-stacked">
+            <li><a href="./index.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Dashboard"><i class="icon-home icon-blue icon-shadowed-white icon-2x"></i><span>Home</span></a></li>
+            <li><a href="./chat.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="ChatBox"> <i class=" icon-comments-alt icon-blue icon-shadowed-white icon-2x"></i><span>Chat</span> </a></li>
+            <li><a href="./grid.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Grid layout"> <i class="icon-columns icon-blue icon-shadowed-white icon-2x"></i><span>Grid</span></a></li>
+            <li><a href="./icon.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Icons"> <i class="icon-tint icon-blue icon-shadowed-white icon-2x"></i><span>Icons</span></a></li>
+            <li><a href="./button.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Buttons"> <i class="icon-th icon-white icon-shadowed icon-2x"></i><span>Buttons</span></a></li>
+            <li><a href="./faq.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="FAQ"> <i class="icon-eye-open icon-blue icon-shadowed-white icon-2x"></i><span>FAQ</span></a></li>
+            <li><a href="./pricing.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Pricing Plans"> <i class="icon-screenshot icon-blue icon-shadowed-white icon-2x"></i><span>Pricing</span></a></li>
+            <li><a href="./invoice.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Invoice"> <i class="icon-list-alt icon-blue icon-shadowed-white icon-2x"></i><span>Invoice</span></a></li>
+            <li><a href="./form.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Forms"> <i class="icon-th-list icon-blue icon-shadowed-white icon-shadowed-white icon-2x"></i><span>Form</span></a> </li>
+            <li><a href="./gallery.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Gallery"> <i class="icon-picture icon-blue icon-shadowed-white icon-2x"></i><span>Gallery</span></a></li>
+            <li class="hidden-phone"> <a class="more-link" href="#"><i class="icon-folder-close icon-blue icon-shadowed-white icon-2x"></i><span>Dropdown</span></a>
+              <ul>
+                <li><a href="./setting.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Profile"><i class="icon-file icon-blue icon-shadowed-white icon-2x"></i><span> Profile</span></a></li>
+                <li><a href="./signup.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Signup"><i class="icon-file icon-blue icon-shadowed-white icon-2x"></i><span> Sign up</span></a></li>
+                <li><a href="./login.html" rel="tooltip" data-toggle="tooltip" data-placement="right" data-original-title="Login"><i class="icon-file icon-blue icon-shadowed-white icon-2x"></i><span>Login</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        
+        <!--Main content-->
+        <div class="span11 main pull-right" style="margin-left:0">
+          <div class="alert alert-info hidden-phone">For each part of my work, modestly, I try to propose to you new ideas. For buttons, a simple hack to add and remove some class on button and button-group to make it more responsive for Tablet and phone. Try to resize your window<a href="#" class="btn btn-mini btn-info close" data-dismiss="alert"><i class="icon-remove icon-white"></i></a></div>
+          <div class="row-fluid">
+            <div class="span6 widget">
+              <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+                <h5>Buttons Sizes & colors</h5>
+              </div>
+              <div class="widget-content">
+                <h6>Responsive Size</h6>
+                <hr>
+                <button class="btn btn-large btn-gold btn-responsive">Large responsive</button>
+                <button class="btn btn-gold btn-responsive">Normal responsive</button>
+                <hr>
+                <h6>Large Size</h6>
+                <hr>
+                <button class="btn btn-large">Button</button>
+                <button class="btn btn-primary btn-large">Button</button>
+                <button class="btn btn-info btn-large">Button</button>
+                <button class="btn btn-success btn-large">Button</button>
+                <button class="btn btn-warning btn-large">Button</button>
+                <button class="btn btn-danger btn-large">Button</button>
+                <button class="btn btn-inverse btn-large">Button</button>
+                <button class="btn btn-gold btn-large">Button</button>
+                <hr>
+                <h6>Normal Size</h6>
+                <hr>
+                <button class="btn">Button</button>
+                <button class="btn btn-primary">Button</button>
+                <button class="btn btn-info">Button</button>
+                <button class="btn btn-success">Button</button>
+                <button class="btn btn-warning">Button</button>
+                <button class="btn btn-danger">Button</button>
+                <button class="btn btn-inverse">Button</button>
+                <button class="btn btn-gold">Button</button>
+                <hr>
+                <h6>Mini Size</h6>
+                <hr>
+                <button class="btn btn-mini">Button</button>
+                <button class="btn btn-primary btn-mini">Button</button>
+                <button class="btn btn-info btn-mini">Button</button>
+                <button class="btn btn-success btn-mini">Button</button>
+                <button class="btn btn-warning btn-mini">Button</button>
+                <button class="btn btn-danger btn-mini">Button</button>
+                <button class="btn btn-inverse btn-mini">Button</button>
+                <button class="btn btn-gold btn-mini">Button</button>
+              </div>
+            </div>
+            <div class="span6 widget">
+              <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+                <h5>Buttons Actions</h5>
+              </div>
+              <div class="widget-content">
+                <h6>Responsive Size</h6>
+                <hr>
+                <div class="btn-group">
+                  <button class="btn btn-large btn-gold btn-responsive">Large responsive</button>
+                  <button data-toggle="dropdown" class="btn btn-large btn-gold btn-responsive dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button class="btn btn-gold btn-responsive">Normal responsive</button>
+                  <button data-toggle="dropdown" class="btn btn-gold btn-responsive dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <hr>
+                <h6>Size</h6>
+                <hr>
+                <div class="btn-group">
+                  <button class="btn btn-large">Large action</button>
+                  <button data-toggle="dropdown" class="btn btn-large dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button class="btn btn-small">Small action</button>
+                  <button data-toggle="dropdown" class="btn btn-small dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button class="btn btn-mini">Mini action</button>
+                  <button data-toggle="dropdown" class="btn btn-mini dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <hr>
+                <h6>Normal</h6>
+                <hr>
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn dropdown-toggle">Action <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Action <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-danger dropdown-toggle">Danger <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-gold dropdown-toggle">Action <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group --> 
+                <br>
+                &nbsp;<br>
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle">Warning <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-success dropdown-toggle">Success <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle">Info <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-inverse dropdown-toggle">Inverse <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <hr>
+                <h6>Split</h6>
+                <hr>
+                <div class="btn-group">
+                  <button class="btn">Action</button>
+                  <button data-toggle="dropdown" class="btn dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button class="btn btn-primary">Action</button>
+                  <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button class="btn btn-gold">Action</button>
+                  <button data-toggle="dropdown" class="btn btn-gold dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button class="btn btn-danger">Danger</button>
+                  <button data-toggle="dropdown" class="btn btn-danger dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group --> 
+                <br>
+                &nbsp;<br>
+                <div class="btn-group">
+                  <button class="btn btn-warning">Warning</button>
+                  <button data-toggle="dropdown" class="btn btn-warning dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button class="btn btn-success">Success</button>
+                  <button data-toggle="dropdown" class="btn btn-success dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button class="btn btn-info">Info</button>
+                  <button data-toggle="dropdown" class="btn btn-info dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group">
+                  <button class="btn btn-inverse">Inverse</button>
+                  <button data-toggle="dropdown" class="btn btn-inverse dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <hr>
+                <h6>Split Dropup</h6>
+                <hr>
+                <div class="btn-group dropup">
+                  <button class="btn">Dropup</button>
+                  <button data-toggle="dropdown" class="btn dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+                <div class="btn-group dropup">
+                  <button class="btn primary">Right dropup</button>
+                  <button data-toggle="dropdown" class="btn primary dropdown-toggle"><span class="caret"></span></button>
+                  <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </div>
+                <!-- /btn-group --> 
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="span6 widget">
+              <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+                <h5>Button block level</h5>
+              </div>
+              <div class="widget-content">
+                <button class="btn btn-large btn-block">Block level button</button>
+                <button class="btn btn-primary btn-large btn-block">Block level button</button>
+                <button class="btn btn-info btn-large btn-block">Block level button</button>
+                <button class="btn btn-success btn-large btn-block">Block level button</button>
+                <button class="btn btn-warning btn-large btn-block">Block level button</button>
+                <button class="btn btn-danger btn-large btn-block">Block level button</button>
+                <button class="btn btn-inverse btn-large btn-block">Block level button</button>
+                <button class="btn btn-gold btn-large btn-block">Block level button</button>
+              </div>
+            </div>
+            <div class="span6 widget">
+              <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+                <h5>Buttons with icon</h5>
+                <a class="btn btn-mini pull-right" href="./icon.html">More here</a> </div>
+              <div class="widget-content"> <a class="btn btn-large btn-responsive btn-gold" href="#"> <i class="icon-th"></i> Large Responsive</a><a class="btn btn-gold btn-responsive" href="#"> <i class="icon-th"></i> Normal Responsive</a> <a class="btn" href="#"> <i class="icon-repeat"></i> Reload</a> <a class="btn btn-success" href="#"> <i class="icon-shopping-cart icon-large"></i> Checkout</a> <a class="btn btn-large btn-primary" href="#"> <i class="icon-comment"></i> Comment</a> <a class="btn btn-small btn-info" href="#"> <i class="icon-info-sign"></i> Info</a> <a class="btn btn-danger" href="#"> <i class="icon-trash icon-large"></i> Delete</a> <a class="btn btn-small" href="#"> <i class="icon-cog"></i> Settings</a> <a class="btn btn-large btn-danger" href="#"> <i class="icon-flag icon-2x pull-left"></i>Font Awesome<br>
+                Version 3.0</a> <a class="btn btn-warning" href="#"> <i class="icon-refresh icon-spin"></i> Synchronizing Content...</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--Footer-->
+<footer class="footer">
+  <p class="text-center">&copy; BootStart</p>
+</footer>
+
+<!--Javascript--> 
+
+<!--libraries--> 
+<script src="./js/jquery.js"></script> 
+<script src="./js/bootstrap.min.js"></script> 
+<script src="./js/bootstrap.min.ext.js"></script> 
+
+<!--Theme--> 
+<script src="./js/theme-mandatory.js"></script> 
+<script src="./js/theme-example.js"></script>
+</body>
+</html>
